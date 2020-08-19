@@ -1,4 +1,4 @@
-# Python implementation of the Boson Exchange Parquet Solver for a quantum impurity model, cite as arXiv:2008.04184
+# Python implementation of the Boson Exchange Parquet Solver (BEPS) for a quantum impurity model, cite as arXiv:2008.04184
 # Copyright (C) 2020 by Friedrich Krien <krien@ifp.tuwien.ac.at>
 
 import h5py
