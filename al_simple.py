@@ -820,7 +820,8 @@ class g_container():
     for nu in range(0,nu_max):
       result = 0.0
       for om in range(0,om_max):
-        result += self.value(nu+om) * ( self.w.ch(om) * self.l.ch(nu,om) + self.w.sp(om) * self.l.sp(nu,om) )
+        result += self.value(nu+om) * ( self.w.ch(om) * self.l.ch(nu,om) + self.w.sp(om) * self.l.sp(nu,om) ) #om=0 and om>0
+        if(om>0): result += self.value(nu-om) * ( self.w.ch(-om) * self.l.ch(nu,-om) + self.w.sp(-om) * self.l.sp(nu,-om) ) #om<0
       sigma[nu] = U/2. - result/(2.*beta)
     for nu in range(0,nu_max):
       self.sigma[nu] = xi * sigma[nu] + (1.-xi) * self.sigma[nu]
