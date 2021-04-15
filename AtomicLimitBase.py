@@ -84,7 +84,7 @@ def set_N_om(N_om_):
     global N_om, om_min, om_max
     N_om = N_om_
     om_min = 0
-    om_max = +N_0m
+    om_max = +N_om_
 
 class MidpointNormalize(colors.Normalize):
   def __init__(self, vmin=None, vmax=None, midpoint=None, clip=False):
@@ -482,16 +482,16 @@ class threeleg_uirr():
     self.th = th
 
   def vtx_ch(self,nu1,nu2,om):
-    return th.ch(nu1,nu2,om) - nb.sbe_ch(nu1,nu2,om)
+    return self.th.ch(nu1,nu2,om) - self.nb.sbe_ch(nu1,nu2,om)
 
   def vtx_sp(self,nu1,nu2,om):
-    return th.sp(nu1,nu2,om) - nb.sbe_sp(nu1,nu2,om)
+    return self.th.sp(nu1,nu2,om) - self.nb.sbe_sp(nu1,nu2,om)
 
   def vtx_si(self,nu1,nu2,om):
-    return th.si(nu1,nu2,om) - nb.sbe_si(nu1,nu2,om)
+    return self.th.si(nu1,nu2,om) - self.nb.sbe_si(nu1,nu2,om)
 
   def vtx_tr(self,nu1,nu2,om):
-    return th.tr(nu1,nu2,om) - nb.sbe_tr(nu1,nu2,om)
+    return self.th.tr(nu1,nu2,om) - self.nb.sbe_tr(nu1,nu2,om)
 
   def ch(self,nu1,om):
     result = 0.0
