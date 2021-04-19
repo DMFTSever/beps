@@ -1,2 +1,9 @@
-__pycache__
+# files ignore by git
+
+# python compiled files
+*__pycache__/
 *.pyc
+
+# tagfiles
+.tags
+tags

@@ -46,11 +46,11 @@ plt.rcParams["mathtext.fontset"] = "cm"
 cmap = plt.get_cmap('bwr')
 
 # various flags for consistency checks mostly not used in this module
-check_bse = False  # Plot MBE vertices M
-check_phi = False  # Plot reducible vertices of parquet decomposition
-check_mbe = False  # Plot reducible vertices of BEPS
-check_lambda_firr = False  # Plot fully irr. vertex of parquet
-check_threeleg_firr = False  # Plot threeleg vertex which arises from fully irr. vertex of parquet (+-1 + sum Lambda^firr gg)
+check_bse               = False  # Plot MBE vertices M
+check_phi               = False  # Plot reducible vertices of parquet decomposition
+check_mbe               = False  # Plot reducible vertices of BEPS
+check_lambda_firr       = False  # Plot fully irr. vertex of parquet
+check_threeleg_firr     = False  # Plot threeleg vertex which arises from fully irr. vertex of parquet (+-1 + sum Lambda^firr gg)
 check_gamma_consistency = False  # Verify the consistency of the exact solution for the vertices
 
 ##############################
